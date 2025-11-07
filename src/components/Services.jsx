@@ -46,7 +46,9 @@ export default function Services() {
               </div>
               <h3 className="mt-4 font-medium">{title}</h3>
               <p className="mt-2 text-sm text-zinc-400">{desc}</p>
-              <button className="mt-4 inline-flex rounded-full bg-white text-black px-4 py-2 text-sm font-medium">Get Quote</button>
+              <button className="mt-4 inline-flex rounded-full bg-white text-black px-4 py-2 text-sm font-medium transition hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-400/50 hover:shadow-[0_0_24px_rgba(251,191,36,0.45)]">
+                Get Quote
+              </button>
             </motion.div>
           ))}
         </div>

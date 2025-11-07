@@ -10,7 +10,7 @@ export default function AutoLite() {
             <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">Auto’Lite Universe</h2>
             <p className="mt-3 max-w-2xl text-zinc-300">A sub-brand exploring lifestyle, motion and car visuals. Integrated within this portfolio — one identity, many expressions.</p>
           </div>
-          <a href="#" className="inline-flex items-center gap-2 rounded-full bg-white text-black px-4 py-2 text-sm font-medium">
+          <a href="#" className="inline-flex items-center gap-2 rounded-full bg-white text-black px-4 py-2 text-sm font-medium transition hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-400/50 hover:shadow-[0_0_22px_rgba(251,191,36,0.45)]">
             View IG/TikTok <ExternalLink size={16} />
           </a>
         </div>
@@ -56,7 +56,7 @@ export default function AutoLite() {
             <h3 className="text-xl font-medium">Featured Lifestyle Drop</h3>
             <p className="text-zinc-300 mt-1">Teasing future merch and car visuals designed for the motion-first era.</p>
           </div>
-          <button className="inline-flex rounded-full bg-white text-black px-4 py-2 text-sm font-medium">Notify Me</button>
+          <button className="inline-flex rounded-full bg-white text-black px-4 py-2 text-sm font-medium transition hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-400/50 hover:shadow-[0_0_22px_rgba(251,191,36,0.45)]">Notify Me</button>
         </div>
       </div>
     </section>

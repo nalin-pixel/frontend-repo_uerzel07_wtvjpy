@@ -23,7 +23,7 @@ export default function Contact() {
               <input className="w-full rounded-lg bg-black/40 px-4 py-3 text-sm ring-1 ring-white/10 placeholder:text-zinc-500 focus:outline-none focus:ring-amber-400/40" placeholder="Email" />
               <textarea rows={5} className="w-full rounded-lg bg-black/40 px-4 py-3 text-sm ring-1 ring-white/10 placeholder:text-zinc-500 focus:outline-none focus:ring-amber-400/40" placeholder="Tell me about your project" />
             </div>
-            <button type="button" className="mt-4 inline-flex items-center gap-2 rounded-full bg-white text-black px-5 py-3 text-sm font-medium">
+            <button type="button" className="mt-4 inline-flex items-center gap-2 rounded-full bg-white text-black px-5 py-3 text-sm font-medium transition hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-400/50 hover:shadow-[0_0_26px_rgba(251,191,36,0.45)]">
               <Send size={16} /> Send
             </button>
           </form>
@@ -31,9 +31,9 @@ export default function Contact() {
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
             <p className="text-zinc-300">Connect</p>
             <div className="mt-4 flex flex-wrap gap-3">
-              <a href="#" className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm ring-1 ring-white/20 hover:bg-white/15"><Twitter size={16} /> X</a>
-              <a href="#" className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm ring-1 ring-white/20 hover:bg-white/15"><Instagram size={16} /> IG</a>
-              <a href="mailto:hello@example.com" className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm ring-1 ring-white/20 hover:bg-white/15"><Mail size={16} /> Email</a>
+              <a href="#" className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm ring-1 ring-white/20 transition hover:bg-white/15 hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-400/40 hover:shadow-[0_0_22px_rgba(251,191,36,0.35)]"><Twitter size={16} /> X</a>
+              <a href="#" className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm ring-1 ring-white/20 transition hover:bg-white/15 hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-400/40 hover:shadow-[0_0_22px_rgba(251,191,36,0.35)]"><Instagram size={16} /> IG</a>
+              <a href="mailto:hello@example.com" className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm ring-1 ring-white/20 transition hover:bg-white/15 hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-400/40 hover:shadow-[0_0_22px_rgba(251,191,36,0.35)]"><Mail size={16} /> Email</a>
             </div>
           </div>
         </div>

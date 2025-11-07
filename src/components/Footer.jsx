@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-amber-500/60 to-transparent" />
       <div className="mx-auto max-w-7xl px-6 py-10 flex items-center justify-between gap-6">
         <p className="text-sm text-zinc-400">© 2025 AZITECH KEV | Built by Azitech | Powered by AI</p>
-        <button onClick={scrollTop} aria-label="Back to top" className="inline-flex items-center gap-2 rounded-full bg-amber-500 text-black px-3 py-2 text-sm font-medium shadow hover:bg-amber-400">
+        <button onClick={scrollTop} aria-label="Back to top" className="inline-flex items-center gap-2 rounded-full bg-amber-500 text-black px-3 py-2 text-sm font-medium shadow transition hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-300/60 hover:shadow-[0_0_22px_rgba(251,191,36,0.55)]">
           <ChevronUp size={16} /> Top
         </button>
       </div>

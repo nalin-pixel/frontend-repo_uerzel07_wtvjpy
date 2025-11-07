@@ -8,7 +8,7 @@ export default function Hero() {
 
   const playEnterChime = () => {
     try {
-      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      const ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
       const o = ctx.createOscillator();
       const g = ctx.createGain();
       o.type = 'sine';
@@ -71,13 +71,13 @@ export default function Hero() {
           transition={{ delay: 0.35, duration: 0.8 }}
           className="mt-8 flex flex-wrap gap-3"
         >
-          <a href="#work" className="inline-flex items-center gap-2 rounded-full bg-white text-black px-5 py-3 font-medium hover:bg-zinc-200 transition">
+          <a href="#work" className="inline-flex items-center gap-2 rounded-full bg-white text-black px-5 py-3 font-medium transition hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-400/50 hover:shadow-[0_0_28px_rgba(251,191,36,0.45)]">
             <Briefcase size={18} /> View Portfolio
           </a>
-          <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-amber-500/90 text-black px-5 py-3 font-medium hover:bg-amber-400 transition">
+          <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-amber-500/90 text-black px-5 py-3 font-medium transition hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-300/60 hover:shadow-[0_0_28px_rgba(251,191,36,0.55)]">
             <Rocket size={18} /> Hire Me
           </a>
-          <a href="#reel" className="inline-flex items-center gap-2 rounded-full bg-white/10 text-white px-5 py-3 font-medium ring-1 ring-white/20 hover:bg-white/15 transition">
+          <a href="#reel" className="inline-flex items-center gap-2 rounded-full bg-white/10 text-white px-5 py-3 font-medium ring-1 ring-white/20 transition hover:bg-white/15 hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-400/40 hover:shadow-[0_0_24px_rgba(251,191,36,0.35)]">
             <Film size={18} /> Watch Motion Reel
           </a>
         </motion.div>
@@ -103,7 +103,7 @@ export default function Hero() {
               <p className="mt-2 text-zinc-400">Cinematic intro. Click to begin.</p>
               <button
                 onClick={handleEnter}
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-white text-black px-6 py-3 font-medium hover:bg-zinc-200 transition"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-white text-black px-6 py-3 font-medium transition hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-400/50 hover:shadow-[0_0_28px_rgba(251,191,36,0.45)]"
               >
                 Enter Experience
               </button>

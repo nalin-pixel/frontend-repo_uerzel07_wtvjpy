@@ -28,7 +28,7 @@ export default function Work() {
               <button
                 key={t}
                 onClick={() => setTab(t)}
-                className={`rounded-full px-4 py-2 text-sm transition ring-1 ring-white/15 ${tab === t ? 'bg-white text-black' : 'bg-white/5 text-white hover:bg-white/10'}`}
+                className={`rounded-full px-4 py-2 text-sm transition ring-1 ring-white/15 ${tab === t ? 'bg-white text-black' : 'bg-white/5 text-white hover:bg-white/10 hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-400/40 hover:shadow-[0_0_22px_rgba(251,191,36,0.35)]'}`}
               >
                 {t}
               </button>
@@ -55,7 +55,7 @@ export default function Work() {
                   <p className="mt-1 text-sm text-zinc-400">Tools: {p.tools}</p>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-black/60 flex items-center justify-center">
-                  <button className="rounded-full bg-white text-black px-4 py-2 text-sm font-medium">View Story</button>
+                  <button className="rounded-full bg-white text-black px-4 py-2 text-sm font-medium transition hover:-translate-y-0.5 hover:ring-2 hover:ring-amber-400/50 hover:shadow-[0_0_24px_rgba(251,191,36,0.45)]">View Story</button>
                 </div>
               </motion.div>
             ))}
