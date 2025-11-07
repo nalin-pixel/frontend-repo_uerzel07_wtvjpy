@@ -1,28 +1,30 @@
-import { useState } from 'react'
+import Hero from './components/Hero';
+import About from './components/About';
+import Work from './components/Work';
+import AutoLite from './components/AutoLite';
+import Services from './components/Services';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
+    <div className="min-h-screen bg-black text-white">
+      <Hero />
+      <About />
+      <Work />
+      <AutoLite />
+      <Services />
+      <section id="reel" className="bg-black text-white">
+        <div className="mx-auto max-w-7xl px-6 py-24">
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">Motion Reel</h2>
+          <p className="mt-3 text-zinc-300">A short cut from selected motion moments. Replace with your video embed later.</p>
+          <div className="mt-8 aspect-video w-full overflow-hidden rounded-2xl border border-white/10 bg-white/5" />
         </div>
-      </div>
+      </section>
+      <Contact />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
